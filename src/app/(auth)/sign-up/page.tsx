@@ -1,9 +1,9 @@
 import { buttonVariants } from '@/components/ui/Button'
-import SignIn from '@/components/SignIn'
 import { cn } from '@/lib/utils'
 import Link from 'next/link'
 import React, { FC } from 'react'
 import { ChevronLeft } from 'lucide-react'
+import SignUp from '@/components/SignUp'
 
 interface pageProps {
 
@@ -16,7 +16,7 @@ const page:FC<pageProps> = ({}) => {
             <Link href='/' className={cn(buttonVariants({variant:'ghost'}), 'self-start -mt-20')}>
                 <ChevronLeft className='mr-4 h-4 w-4' /> Home
             </Link>
-            <SignIn />
+            <SignUp />
         </div>
 
        
