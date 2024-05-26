@@ -3,7 +3,7 @@ import { db } from '@/lib/db'
 import { PostValidator } from '@/lib/validators/post'
 import { z } from 'zod'
 
-export async function POST(req: Request) {
+export async function POST(req: Request) {  
   try {
     const body = await req.json()
 
